@@ -423,7 +423,7 @@ public final class StillImageActivity extends AppCompatActivity {
           Log.i(TAG, "Using Custom Object Detector Processor");
           LocalModel localModel =
               new LocalModel.Builder()
-                  .setAssetFilePath("custom_models/object_labeler.tflite")
+                  .setAssetFilePath("custom_models/best_v2_float32.tflite")
                   .build();
           CustomObjectDetectorOptions customObjectDetectorOptions =
               PreferenceUtils.getCustomObjectDetectorOptionsForStillImage(this, localModel);

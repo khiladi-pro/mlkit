@@ -363,7 +363,7 @@ class StillImageActivity : AppCompatActivity() {
         OBJECT_DETECTION_CUSTOM -> {
           Log.i(TAG, "Using Custom Object Detector Processor")
           val localModel =
-            LocalModel.Builder().setAssetFilePath("custom_models/object_labeler.tflite").build()
+            LocalModel.Builder().setAssetFilePath("custom_models/best_v2_float32.tflite").build()
           val customObjectDetectorOptions =
             PreferenceUtils.getCustomObjectDetectorOptionsForStillImage(this, localModel)
           imageProcessor = ObjectDetectorProcessor(this, customObjectDetectorOptions)

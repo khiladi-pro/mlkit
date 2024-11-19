@@ -203,6 +203,6 @@ class CameraXSourceDemoActivity : AppCompatActivity(), CompoundButton.OnCheckedC
   companion object {
     private const val TAG = "CameraXSourcePreview"
     private val localModel: LocalModel =
-      LocalModel.Builder().setAssetFilePath("custom_models/object_labeler.tflite").build()
+      LocalModel.Builder().setAssetFilePath("custom_models/best_v2_float32.tflite").build()
   }
 }

@@ -55,7 +55,7 @@ public final class CameraXSourceDemoActivity extends AppCompatActivity
   private static final String TAG = "CameraXSourceDemo";
 
   private static final LocalModel localModel =
-      new LocalModel.Builder().setAssetFilePath("custom_models/object_labeler.tflite").build();
+      new LocalModel.Builder().setAssetFilePath("custom_models/best_v2_float32.tflite").build();
 
   private PreviewView previewView;
   private GraphicOverlay graphicOverlay;
